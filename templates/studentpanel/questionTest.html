@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Studentpanel | Online Quiz System</title>
+    <link rel="stylesheet" type="text/css" href="css/ranking.css"/>
+
+
+</head>
+<div >
+<form method="POST" action="teststart" >
+    <label> <input type="text"  name="titlename" value="{{titlename}}" hidden></label>
+<h2>
+   <center> Test :- {{titlename}}</center></h2><h2 class="pull-right">Marks</h2>
+    <div class="intro">
+           
+        <h3><span>{{objque.que_no}} ) </span>{{objque.question_text}}</h3><h3 class="pull-right">{{objque.marks}}</h3>
+        
+        <div>
+            <input type="radio" name="{{objque.question_id}}"  value="{{objque.ans1}}" />
+            <label>A) {{objque.ans1}} </label>
+        </div>
+        
+        <div>
+            <input type="radio" name="{{objque.question_id}}" value="{{objque.ans2}}" />
+            <label >B) {{objque.ans2}}</label>
+        </div>
+        
+        <div>
+            <input type="radio" name="{{objque.question_id}}"  value="{{objque.ans3}}" />
+            <label >C) {{objque.ans3}}</label>
+        </div>
+        
+        <div>
+            <input type="radio" name="{{objque.question_id}}" value="{{objque.ans4}}" />
+            <label>D) {{objque.ans4}}</label>
+        </div>
+
+        <div class="intro">
+           
+            <h3><span>{{objque.que_no}} ) </span>{{objque.question_text}}</h3><h3 class="pull-right">{{objque.marks}}</h3>
+            
+            <div>
+                <input type="radio" name="{{objque.question_id}}"  value="{{objque.ans1}}" />
+                <label>A) {{objque.ans1}} </label>
+            </div>
+            
+            <div>
+                <input type="radio" name="{{objque.question_id}}" value="{{objque.ans2}}" />
+                <label >B) {{objque.ans2}}</label>
+            </div>
+            
+            <div>
+                <input type="radio" name="{{objque.question_id}}"  value="{{objque.ans3}}" />
+                <label >C) {{objque.ans3}}</label>
+            </div>
+            
+            <div>
+                <input type="radio" name="{{objque.question_id}}" value="{{objque.ans4}}" />
+                <label>D) {{objque.ans4}}</label>
+            </div>
+
+    <button name="submit" value ="submit"  class="btn btn-primary btn-block">submit</button>
+</div>
+
+</form>
