@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
+		<center>Use Username="admin" and Password="admin123" where required.</center>
 		<title>Login | Online MCQS System</title>
 		<link rel="stylesheet" type="text/css" href="css/login.css"/>
 
@@ -13,24 +14,25 @@
 					<div class="box-wrapper">				
 						<div class="box box container">
 							<div class="box-body">
-								<form action="./teacherpanel/home.html">
+								
+									<form  method="get">
 									<h1>Teacher Login Form</h1>
 									<div><p>Username     <input type="text"  required="" id="username" /></p></div>
 									<div><p>Password     <input type="password"  required="" id="password" /></p></div>	
 									<div><p><input type="checkbox" id="rem"   >     Remember me  </p>    </div>		
 									<div>
-										<input type="submit" value="Log in" class="btn" a href="teacherpanel/home.html" ><br>
+										<input type="submit" value="Log in" class="btn" onclick="pasuser(this.form)" ><br>
 										<a href="#">Forgot Password</a><br>
 
 										for studentpanel <a href="login.html" >click here</a></p>
 									</div>
-								</form>
+								
 							</div>
 						</div>
 					</div>
 				</div>
 			</section>
-		
+			<script src="js/admin.js"></script>
 		</body>
 	
 </html>

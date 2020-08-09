@@ -10,7 +10,7 @@
 				<div class="box-wrapper">				
 					<div class="box box container">
 						<div class="box-body">
-							<form action="">
+							<form action="studentpanel/home.html">
 								<h1>Registration Form</h1>
 								<table>
 								<div><p align=centre class="btntabs">Your Name     <br>		<input type="text"  required="" id="fname" /></p></div>
@@ -24,7 +24,7 @@
 								</table>
 
 						<div class="form-group text-right"><p style="color: white; text-align:center" style="text-align:center">
-							<button class="btn btn-primary btn-block" name="submit">Register</button>
+							<button class="btn btn-primary btn-block" name="submit" onclick="showInput(this.form)">Register</button>
 						</div>
 						<div text-center><p >
 							Already have an account! <a href="login.html">Login </a> Here..
@@ -40,6 +40,7 @@
 				</div>
 			</div>
 		</section>
-
+		
+		<script src="js/registration.js"></script>
 	</body>
 </html>
